@@ -6,6 +6,7 @@
 //  Copyright © 2020 Cédric Luthi. All rights reserved.
 //
 
+@import Foundation;
 #import "XCDURLGETOperation.h"
 #import "XCDYouTubeLogger+Private.h"
 
