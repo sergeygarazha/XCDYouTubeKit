@@ -737,7 +737,6 @@
 				SDKROOT = iphoneos;
 				SUPPORTED_PLATFORMS = "watchsimulator watchos macosx iphonesimulator iphoneos appletvsimulator appletvos";
 				SUPPORTS_MACCATALYST = YES;
-				USE_HEADERMAP = NO;
 				WARNING_CFLAGS = (
 					"$(inherited)",
 					"-Wno-auto-import",
@@ -755,7 +754,6 @@
 				SDKROOT = iphoneos;
 				SUPPORTED_PLATFORMS = "watchsimulator watchos macosx iphonesimulator iphoneos appletvsimulator appletvos";
 				SUPPORTS_MACCATALYST = YES;
-				USE_HEADERMAP = NO;
 				WARNING_CFLAGS = (
 					"$(inherited)",
 					"-Wno-auto-import",
