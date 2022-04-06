@@ -3,10 +3,26 @@
 //
 
 #import "XCDYouTubePlayerScript.h"
+#import "XCDYouTubeLogger+Private.h"
+
+#ifdef TARGET_OS_WATCH
+
+@implementation XCDYouTubePlayerScript
+
+- (instancetype) initWithString:(NSString *)string customPatterns:(NSArray<NSString *> *)customPatterns {
+	self = [super init];
+	return self;
+}
+
+- (NSString *) unscrambleSignature:(NSString *)scrambledSignature {
+	return [NSString new];
+}
+
+@end
+
+#else
 
 #import <JavaScriptCore/JavaScriptCore.h>
-
-#import "XCDYouTubeLogger+Private.h"
 
 @interface XCDYouTubePlayerScript ()
 @property (nonatomic, strong) JSContext *context;
@@ -159,3 +175,5 @@
 }
 
 @end
+
+#endif
